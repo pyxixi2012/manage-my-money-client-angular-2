@@ -1,0 +1,26 @@
+{
+  "name": "manage-my-money-client-angular-2",
+  "version": "1.0.0",
+  "description": "manage my money application implementation using angular 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shivam91/manage-my-money-client-angular-2.git"
+  },
+  "author": "Shivam Tanna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shivam91/manage-my-money-client-angular-2/issues"
+  },
+  "homepage": "https://github.com/Shivam91/manage-my-money-client-angular-2",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-uglify": "^1.5.3"
+  }
+}

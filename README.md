@@ -4,7 +4,7 @@ manage my money client side application implementation using angular 2.
 # How to start
 Note that this seed project requires node v4.x.x or higher and npm 2.14.7.
 
-# You must have ts-node installed as global. If you don't, use:
+You must have ts-node installed as global. If you don't, use:
 
 npm install -g ts-node
 You must also have Ruby and scss-lint installed. If you are running on MacOS, to install scss-lint you need to use sudo and a folder that you can write to. For example:

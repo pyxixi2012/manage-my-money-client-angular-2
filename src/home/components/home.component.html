@@ -1,0 +1,23 @@
+<section id="dashboard-view" class="dashboard container-fluid">
+
+    <h1>Transactions by Category</h1>
+    <h2 *ngIf="startDate">
+        From {{startDate}} to {{endDate}}
+    </h2>
+    <h2 *ngIf="!startDate">
+        For all time
+    </h2>
+
+    <form name="" class="form-inline" novalidate>
+        <div class="form-group">
+            <label for="period">Period</label>
+            <select (change)="getTransactionsByCategories($event.target.value)" >
+                <option *ngFor="#period of periods" [value]="period.name">{{period.name}}</option>
+            </select>
+        </div>
+    </form>
+    <div class="dashboard-message alert alert-info" role="alert" *ngIf="transactions.length === 0">
+        No transactions during this period.transactions
+    </div>
+    <sd-barchart *ngIf="transactions && transactions.length > 0" [chartData]=transactions ></sd-barchart>
+</section>

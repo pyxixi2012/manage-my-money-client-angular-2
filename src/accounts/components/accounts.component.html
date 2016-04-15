@@ -1,0 +1,48 @@
+<div class="accounts-list">
+    <md-data-table class="accounts" layout-fill>
+        <thead>
+        </thead>
+        <tbody>
+            <tr *ngFor="#account of accounts">
+                <td class="md-text-cell transactions-columnDate" (click)=getTransactions(account.id)>
+                    <a md-button>{{account.name}}</a>
+                </td>
+            </tr>
+        </tbody>
+    </md-data-table>
+</div>
+<div class="transactions-list">
+    <md-data-table class="transactions" layout-fill>
+        <thead>
+            <tr>
+                <th class="transactions-columnDate md-text-cell">Date</th>
+                <th class="transactions-columnPayee">Payee</th>
+                <th class="transactions-columnMemo">Memo</th>
+                <th class="transactions-columnCategory">Category</th>
+                <th class="transactions-columnAmount text-right">Amount</th>
+                <th class="transactions-columnPayment text-right">Payment</th>
+                <th class="transactions-columnDeposit text-right">Deposit</th>
+                <th class="transactions-columnBalance text-right">Balance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="#t of transactions">
+                <td class="md-text-cell transactions-columnDate">{{t.txn_date}}</td>
+                <td class="transactions-columnPayee">{{t.payee}}</td>
+                <td class="transactions-columnMemo">{{t.memo}}</td>
+                <td class="transactions-columnCategory">{{t.category.name}}</td>
+                <td class="transactions-columnAmount text-right">{{t.amount}}</td>
+                <td class="transactions-columnPayment text-right">{{t.amount}}</td>
+                <td class="transactions-columnDeposit text-right">{{t.amount}}</td>
+                <td class="transactions-columnBalance text-right">{{t.balance}}</td>
+            </tr>
+        </tbody>
+    </md-data-table>
+</div>
+<div class="add-transaction">
+    <button md-raised-button class="md-raised md-primary" (click)="showAdvanced($event)" flex="auto">Add Transaction</button>
+    <div hide-gt-sm layout="row" layout-align="center center" flex="100">
+        <md-checkbox [(checked)]="customFullscreen" aria-label="Fullscreen Custom Dialog">Custom Dialog Fullscreen
+        </md-checkbox>
+    </div>
+</div>

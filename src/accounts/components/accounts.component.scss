@@ -1,0 +1,31 @@
+:host {
+  display: block;
+  padding: 0 16px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: .005em;
+  margin-bottom: 0;
+  margin-top: .83em;
+}
+md-data-table td, .md-data-table td {
+    border: 0;
+}
+[md-button]:hover {
+    background: none;
+}
+.accounts-list {
+    display: inline-flex;
+    width: 25%;
+}
+.transactions-list {
+    display: inline-flex;
+    width: 74%;
+    height: 600px;
+    overflow: auto;
+}
+.add-transaction {
+    display: block;
+}

@@ -1,5 +1,5 @@
-# manage-my-money-client-angular-2
-manage my money client side application implementation using angular 2.
+# Manage my money - client side app
+manage my money client side application implementation using angular 2. note: repo does not contain data services(server).
 
 # How to start
 Note that this seed project requires node v4.x.x or higher and npm 2.14.7.

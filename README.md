@@ -26,3 +26,9 @@ npm run build.dev
 
 # prod build
 npm run build.prod
+
+# Screens
+
+![alt tag](https://github.com/Shivam91/manage-my-money-client-angular-2/blob/master/screenshots/Screen%20Shot1.png)
+![alt tag](https://github.com/Shivam91/manage-my-money-client-angular-2/blob/master/screenshots/Screen%20Shot2.png)
+![alt tag](https://github.com/Shivam91/manage-my-money-client-angular-2/blob/master/screenshots/Screen%20Shot3.png)
